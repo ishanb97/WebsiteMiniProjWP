@@ -1,0 +1,41 @@
+<html>
+<head>
+	<title>Form</title>
+	
+<script src="jquery.min.js">
+</script>
+<script src="jquery.validate.min.js">
+</script>
+<script type="text/javascript">
+		$(document).ready(function()
+		{
+		$("#f11").validate(
+		{
+		rules:
+		{
+		name1:{required:true},
+		phone1:{required:true,minlength:10},
+		email1:{required:true,email:true}
+		},
+		messages:
+		{
+		name1:{required:"Please Enter your name "},
+		email1:{required:"Please Enter valid email "},
+		phone1:{required:"Please Enter valid number "}
+		}
+								
+		});
+		});
+							
+</script>
+</head>
+<body>
+<form name="f1" id="f11">
+
+   Name :<input type="text" name="name1" value=""><br>
+Phone number:	<input type="text" name="phone1" value=""><br>
+	Email:<input type="text" name="email1" value=""><br>
+	<input type="Submit" value="Validate" id="verify">
+</form>
+</body>
+</html>

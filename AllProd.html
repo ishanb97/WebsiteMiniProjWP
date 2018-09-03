@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="Menu.css">
+<style>
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+</head>
+<body style=background-color:lightblue>
+
+<ul>
+  <li><a class="active" href="">Products</a></li>
+  <li><a href="#">Contact</a></li>
+  <li><a href="#">About</a></li>
+</ul>
+
+<div class="responsive">
+  <div class="gallery">
+    <a   href="S7.html">
+      <img src="download.jpg" width="300" height="200">
+    </a>
+    <div class="desc"><b>Samsung Galaxy S7</b></div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a   href="iph.html">
+      <img src="iphoneimg.jpg" alt="" width="600" height="400">
+    </a>
+    <div class="desc"><b>iPhone 7</b></div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a   href="fit.html">
+      <img src="ftbt.jpg" alt="" width="600" height="400">
+    </a>
+    <div class="desc"><b>Fitbit Health Tracker</b></div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a   href="Lp.html">
+      <img src="lamp.jpg" alt="" width="600" height="400">
+    </a>
+    <div class="desc"><b>Bajaj Light Lamp</b></div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a   href="ipd.html">
+      <img src="ipod.jpg" alt="" width="600" height="400">
+    </a>
+    <div class="desc"><b>iPod Classic</b></div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a   href="toast.html">
+      <img src="ts.jpg" alt="" width="600" height="400">
+    </a>
+    <div class="desc"><b>Morphy Richards Toaster</b></div>
+  </div>
+</div>
+<div class="clearfix"></div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a   href="Mg5.html">
+      <img src="motoG5.jpg" alt="" width="600" height="400">
+    </a>
+    <div class="desc"><b>Motorola G5</b></div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a   href="wash.html">
+      <img src="wm2.jpg" alt="" width="600" height="400">
+    </a>
+    <div class="desc"><b>LG Front Loading Washhing Machine</b></div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title="Mini-project">
+<script type="text/javascript">
+function validateForm() {
+    var x = document.forms["log"]["uid"].value;
+    var y = document.forms["log"]["pass"].value;
+    
+    if (x == ""  || y == "") {
+        alert("Name and password must be filled out");
+        return false;
+    }
+}
+</script>
+<style>
+input[type=submit]{
+margin:auto;
+color:green;
+width=30px;
+height=20px;
+}
+#bod{
+color:rgb(0,0,255);
+margin:0;
+padding:0;
+}
+a{
+text-decoration:none;
+}
+a:link {
+    background-color: yellow;
+}
+
+a:visited {
+    background-color: cyan;
+}
+input:focus{
+background-color:lightgreen;
+}
+a:hover {
+    background-color: darkgreen;
+}
+input[type=submit]
+{
+font-size:20px;
+}
+input[type=text]
+{
+width:100%;
+display:inline-block;
+border: 2px solid;
+ border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=password]
+{
+width:100%;
+display:inline-block;
+border: 2px solid;
+ border-radius: 4px;
+    box-sizing: border-box;
+}
+.center {
+    margin: auto;
+    width: 100%;
+    padding: 200px;
+    text-align:center;
+}
+a:active {
+    background-color: hotpink;
+}
+.b{
+float:right;
+cursor:pointer;
+font-size:24px;
+color:white;
+background-color:blue;
+}
+table{margin:auto;
+font-size:16;
+text-align:center;} 
+div{
+box-sizing:border-box;
+width:100%;
+}
+</style>
+</head>
+<body background="a.jpg">
+<div style=color:white;text-align:center;>
+<h1 style=color:Blue>
+<div style=background-color:black><b>Welcome to online shopping at XYZ</b></div>
+</h1></div>
+<button class="b" title="Register now">Sign up</button>
+</div>
+<div class="center" border: 1px solid black;
+    
+    >
+<form action="#" name="log" onclick="return validateForm()" method="post">
+<div style=color:White;background-color:black;>
+<table>
+<tr><td>
+<strong>UserId</strong></td><td>
+<input type="text" title="UserId" name="uid" ></td>   
+<br>
+<br>
+</tr><tr><td>
+<strong>Password</strong></td><td>
+<input type="password" name="pass"></td></tr>
+<br>
+<br>
+<tr><td colspan="2">
+<a href="#" title="Click to login">
+<input type="submit"  value="Log in" style=color:white;background-color:blue;>
+</a>
+</div>
+</td></tr></table>
+</div>
+</form>
+</body>
+</html>
